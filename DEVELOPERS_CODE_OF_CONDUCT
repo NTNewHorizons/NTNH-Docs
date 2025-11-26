@@ -1,0 +1,86 @@
+# Contribution Guidelines
+
+## Code of Conduct and Respect Policy
+
+**All NT:NH developers are required to show respect to all project participants** on GitHub, Discord, and any other place where they represent the NT:NH project. The following behaviors are strictly prohibited:
+
+- **Insults and personal attacks**
+- **Malicious trolling**
+- **Dismissive or condescending attitudes toward others**
+
+**Golden Rule: Don't be an asshole.** This is especially important when interacting with other developers who may disagree with your ideas, and vice versa. Violation of this conduct policy may result in demotion, regardless of your contributions to the project.
+
+## Pull Request Requirements
+
+### General Requirements
+- All PRs must be reviewed by at least one member of the [@admin](https://github.com/orgs/NTNewHorizons/teams/admin) team
+- Any PR must be approved by at least one admin before merging
+- Description must be detailed and clear, explaining what you did and how it will affect the repository
+
+### PR Documentation Standards
+To improve code review quality, PRs with new features or balance changes must:
+
+- **Explain the what and why:** Clearly describe what changes you made and why you made them
+- **Be precise and detailed:** Provide comprehensive descriptions to help reviewers make informed decisions about accepting changes
+- **Include visual aids (optional but recommended):** Add screenshots and videos when relevant (these can be directly copied to the #upcoming-features channel)
+- **Write changelog-ready titles:** Craft PR titles as if they will be read directly from the changelog
+- **Use atomic commits:** Make multiple short, focused commits instead of one large commit
+- **Meaningful commit messages:** Name commits to accurately reflect the essence of the changes made
+
+## How to Create a PR
+1. Create a branch from main
+2. Make your changes following the guidelines below
+3. Create a PR to main branch with proper documentation
+4. Wait for approval from @admin team member
+5. Merge the changes after approval
+
+## Content Creation Guidelines
+
+### Scope and Expertise
+- **Avoid changes outside your expertise:** Do not modify areas of the package that you as a player have never personally experienced, unless you have feedback from other developers/players who are experienced in those specific areas.
+
+### Pre-Submission Process
+- **Mandatory discussion:** Do not submit PRs with new content without prior discussion with the team. We have had cases where changes were accepted without proper discussion, leading to terrible discoveries after release to players.
+- **Follow project vision:** If what you want to add does not align with the project vision document, discuss it in #general channel, ping @Admin, and if consensus is reached, the vision document can be updated.
+- **Be open to criticism:** Sometimes what you are proud of may not appeal to others in its current form. This is normal and part of the development process.
+
+### Balance Changes
+- Balance PRs must follow the project vision and content creation guidelines
+- Balance PRs must be clearly marked as balance changes
+- **No mixed changes:** Balance changes should never be mixed with unrelated changes in the same PR
+
+## Code Quality Standards
+- Follow the existing code style
+- Write clear, descriptive commit messages
+- Make small, focused commits rather than large, monolithic ones
+- Document complex logic directly in the code when necessary
+
+## Code Review Guidelines
+
+### For Reviewers
+
+#### 1. Know Your Limits and Expand Them
+Everyone has knowledge boundaries, but there are no limits to what you can learn. Instead of avoiding PRs in unfamiliar areas, study them to identify potential issues. Gradually increase the complexity of PRs you review. Even new developers can identify potential problems or inconsistencies ("code smells"). While you shouldn't approve PRs without deep knowledge, it's valuable to review, ask questions, and encourage authors to reconsider their approach.
+
+#### 2. Ask for Clarification When Needed
+If part of the code or logic is only clear to the author, this creates knowledge gaps. Request the author to explain it in comments or documentation. If a concept remains difficult to explain even after comments, the author should document it directly in the code.
+
+#### 3. Read the PR Description
+The PR description provides a quick overview of changes. If the description is empty, request the author to fill it out. Good descriptions help not only changelog readers but also reviewers understand the scope and determine if they're suitable for review.
+
+#### 4. Foster a Positive Environment
+Remember that behind every pull request is a person who invested time and effort. Your comments reflect on the entire GTNH organization and can significantly impact someone's motivation. One negative or rude comment can discourage a developer from further contributions, resulting in loss of valuable input and innovation. Today's beginner may become tomorrow's project leader.
+
+**Provide constructive feedback:** Encourage growth by offering practical, respectful feedback. Acknowledge what's done well as much as what needs improvement. If something is unclear, phrase questions as sincere requests for understanding, not as hidden criticism. The community thrives when members feel valued and respected.
+
+## Developer Activity Management
+
+### Handling Breaks
+- **Understanding active developers** helps redistribute tasks more effectively
+- **Life comes first:** Personal circumstances may require temporary breaks from the GT:NH project - this is completely understandable and respected
+- **Planned breaks:** If you anticipate a break in your contributions, consider setting an "inactive" status so you're not bothered with NTNH questions
+  - This is **not a demotion** - you can always request reactivation after your break
+- **Automatic status changes:** After one month of inactivity (defined as no code contributions or PR reviews), you will be automatically marked as on vacation
+
+## Questions?
+Contact the @admin team if you have any questions about the process, conduct guidelines, or any other aspect of contributing to the project.

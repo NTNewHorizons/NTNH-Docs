@@ -20,7 +20,7 @@ My condolences.
 | **BufkaSecond** | Secondary developer (Bufka2011's second account). Effectively the same person. |
 | **Hi-Verse** | Main developer |
 | **Rerserder** | Main developer |
-| **xekitan** | Java lead developer |
+| **xekitan** | Java lead developer. The guy who rules the Java in NTNH. |
 | **rt194646** | Part-time developer |
 | **gamma63** | Part-time developer |
 

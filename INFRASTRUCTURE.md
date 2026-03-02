@@ -20,9 +20,9 @@ My condolences.
 | **BufkaSecond** | Secondary developer (Bufka2011's second account). Effectively the same person. |
 | **Hi-Verse** | Main developer |
 | **Rerserder** | Main developer |
-| **xekitan** | Main developer |
-| **rt194646** | Main developer |
-| **gamma63** | Main developer |
+| **xekitan** | Java lead developer |
+| **rt194646** | Part-time developer |
+| **gamma63** | Part-time developer |
 
 ---
 

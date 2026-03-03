@@ -1,65 +1,79 @@
-# NTNH Contribution Guidelines, Version 1
-##### (srry [bob](https://github.com/HbmMods) for stealing your guidelines)
+# Contributing
 
+This document covers everything you need to know to get a PR merged into NTNH. Read it fully before opening your first PR.
 
-## Pull Request Requirements:
+---
 
-* All PRs must be reviewed by at least one member of the [@admin](https://github.com/orgs/NTNewHorizons/teams/admin) team
-* Description must be detailed and clear, explain what you did and how is it going to affect the repository
+## Before You Start
 
+If you're planning a large feature, a refactor, or anything that touches systems outside your immediate task - **talk to the team first.** Post in `#general` on [Discord](https://discord.gg/wtNVzeE5QB) (don't forget to ping @Bufka2011) or open a discussion on GitHub.
 
-## How to create a PR:
+There are no guarantees that a PR gets merged no matter how much work you put into it. Catching a misalignment early saves everyone's time, especially yours.
 
-1. Create a branch from main
-2. Make your changes
-3. Create a PR to main branch
-4. Wait for approval from @admin team member
-5. Merge the changes after approval
+For refactor PRs specifically: consult the [`@Leads`](https://github.com/orgs/NTNewHorizons/teams/leads) or [`@Admins`](https://github.com/orgs/NTNewHorizons/teams/admins) team before starting work. Unsolicited refactor PRs will almost certainly be rejected.
 
+---
 
-## Keep it concise
+## PR Requirements
 
-The best PRs are the ones that are small and to the point. The entire PR should focus on the thing you're trying to do, whether it's a fix or a feature PR. If your PR adds the Super Weldtronic 9000, there's no reason to include changes and tweaks to other things that have nothing to do with the Super Weldtronic 9000. If you think those changes are still necessary, open a new PR.
+- Every PR must be reviewed and approved by **at least one member of [`@Leads`](https://github.com/orgs/NTNewHorizons/teams/leads) or [`@Admins`](https://github.com/orgs/NTNewHorizons/teams/admins)** before merging.
+- Your PR description must clearly explain **what you changed** and **why**, and note any side effects or areas it might affect.
 
+---
 
-## Keep it clean
+## How to Open a PR
 
-Things you should avoid in you PRs include:
-* duplicate functions (we don't need 100 mods telling "yeag, this is definetly a pig")
-* unused or half finished features (for obvious reasons)
-* half finished or obviously broken features (à la "they'll will fix it, i'm sure of it", please don't do that)
-* updating the changelog (you're guaranteed to cause a merge conflict with that)
+1. Branch off `updates/upcoming` (or the appropriate `updates/*` branch).
+2. Make your changes.
+3. Open a PR targeting `updates/upcoming`.
+4. Fill in the PR description properly (see above).
+5. Wait for an admin to review. Don't merge your own PR.
 
-Things you should include in you PRs:
-* write clear commit messages (optional, increases your PR's chances to be merged) (anyways commits like "femboy milk" or "shit" are ok)
+---
 
+## Keep It Focused
 
-## Test your things
+The best PRs do exactly one thing. If your PR adds a new machine, it should only contain changes related to that machine. Don't bundle in unrelated tweaks, config changes, or fixes - open a separate PR for those.
 
-This should go without saying, but please don't PR that was never actually tested or has obvious errors in it.
+---
 
-**Addendum:** Because apparently some people think that testing is somehow optional, it is now **mandatory** to test the PR both on a client and on a server. If the PR contains compat code for any of the mods, the game has to work **with and without** the mod that the compat is for.
+## Keep It Clean
 
+**Don't include:**
+- Duplicate functions or redundant code
+- Unused or half-finished features
+- Broken code left for "someone else to fix later"
+- Changelog edits (you will cause a merge conflict, every time)
 
-## No refactor PRs (with exception)
+**Do include:**
+- Clean, readable code
+- Descriptive commit messages (not required, but it helps - though commit messages like "femboy milk" have historically made it through)
 
-Please consult the [@admin](https://github.com/orgs/NTNewHorizons/teams/admin) team on GitHub or Dev team in Discord.
+---
 
+## Test Your Work
 
-## Communication
+**This is mandatory.** Before opening a PR, you must test your changes:
 
-If you're planning on adding some new thing or doing a grand change, it's best to ask whether that's a good idea before spending 50 hours on a project that won't end up getting merged, due to issues that could have been entirely avoidable with communication.
+- ✅ On a **client**
+- ✅ On a **server**
+- ✅ If your PR includes compatibility code for a specific mod: test the game **with and without** that mod installed
 
+PRs with untested or obviously broken code will be rejected.
 
-## No guarantees
+---
 
-This ties together with the previous point - there's no guarantees that your PR gets merged no matter how hard or long you've worked on it. However, if you follow these guidelines, there's a good chance that your PR will be accepted.
+## Code Standards
 
+*(This section is a placeholder - define project-specific code standards here, e.g. ZenScript formatting conventions, naming patterns for recipe overrides, etc.)*
 
-## I want to help but don't know where to start
+---
 
-If you want to help the project, consider getting involved with the [Crowdin project](https://crowdin.com/project/ntnh) first. Translating NTNH is the easiest and quickest way of helping, and requires no minecraft debugging knowledge. If you do know Java and want to help, consider these places first:
+## I Want to Help But Don't Know Where to Start
 
-* Contributing to upstreams ([NTM](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) and [NTM: Space](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT)) or directly to the [NTNH NTM repo](https://github.com/NTNewHorizons/Hbm-s-Nuclear-Tech-GIT)
-* Contributing to [our website repo](https://github.com/NTNewHorizons/NTNewHorizons.github.io)
-* Posting your ideas in [#suggestions](https://discord.com/channels/1365318764895277136/1416584800457723965) channel in our Discord (you can post anything but please no shitposts)
+A few good entry points:
+
+- **Translations** - No Java or modding knowledge required. Head to the [Crowdin project](https://crowdin.com/project/ntnh) and start translating. It's the fastest way to make a real contribution.
+- **Upstream contributions** - Fix issues in [NTM](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) or [NTNH's NTM fork](https://github.com/NTNewHorizons/Hbm-s-Nuclear-Tech-GIT). Improvements there flow downstream into NTNH.
+- **Website** - The [website repo](https://github.com/NTNewHorizons/NTNewHorizons.github.io) is always open to improvements.
+- **Suggestions** - Post ideas in the `#suggestions` channel on [Discord](https://discord.gg/wtNVzeE5QB). No shitposts though.

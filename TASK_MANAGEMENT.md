@@ -27,8 +27,10 @@ Without it, work gets duplicated, PRs appear from nowhere, and nobody knows what
 | Column | Meaning |
 |---|---|
 | **Backlog** | Ideas and tasks that are approved to be worked on eventually, but no one is actively doing them yet. |
+| **Ready** | Cards that have been triaged and are fully specified; someone can pick them up immediately. |
 | **In Progress** | Someone is actively working on this right now. If you pick up a task, move it here and assign yourself. |
-| **In Review** | A PR has been opened. Waiting for admin review and approval. |
+| **Awaiting review** | The work is finished and a PR is open, but the card hasn't been moved into the formal review column yet (useful for staging). |
+| **In Review** | A PR has been opened and the item is awaiting admin review and approval. |
 | **Done** | Merged and closed. |
 
 ---
@@ -36,14 +38,14 @@ Without it, work gets duplicated, PRs appear from nowhere, and nobody knows what
 ## How to Use the Board: Step by Step
 
 ### Picking up a task
-1. Find a card in **Backlog** that you want to work on.
+1. Look in **Backlog** or **Ready** for a card you want to work on. Ready items can be started immediately; backlog items may need refinement first.
 2. Assign yourself to the card.
 3. Move the card to **In Progress**.
 4. Create a branch and start working (see [CONTRIBUTING.md](./CONTRIBUTING.md) for branch and PR conventions).
 
 ### Opening a PR
 1. When your work is ready, open a PR to `updates/upcoming`.
-2. Move the card to **In Review**.
+2. Move the card from **In Progress** to **Awaiting review** (if you want a staging step) or directly to **In Review**.
 3. Link the PR to the card (GitHub does this automatically if you reference the issue number in the PR description with `Closes #123`).
 
 ### After merge

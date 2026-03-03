@@ -27,7 +27,8 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 ### 👑 Admins - *Bufka2011, BufkaSecond*
 
 > **GitHub team:** [`@Admins`](https://github.com/orgs/NTNewHorizons/teams/admins)  
-> **Repository access:** Full rights across all repositories.
+> **Repository access:** Full rights across all repositories.  
+> **Ruleset bypass:** Exempt - rulesets are not evaluated for Admins at all.
 
 - **Bufka2011** owns the project and has the final say on everything - technical, organizational, or otherwise.
 - **BufkaSecond** is Bufka2011's secondary GitHub account and carries the same authority.
@@ -39,7 +40,8 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 ### 🔷 Leads - *xekitan (Java Lead), Hi-Verse (Project Lead)*
 
 > **GitHub team:** [`@Leads`](https://github.com/orgs/NTNewHorizons/teams/leads)  
-> **Repository access:** Full rights across all repositories.
+> **Repository access:** Full rights across all repositories.  
+> **Ruleset bypass:** Always allow - rulesets are evaluated but Leads are prompted to bypass when needed.
 
 - Leads have full repository rights and share day-to-day governance of the project with admins.
 - They can approve and merge PRs, push directly to development branches, and make significant technical calls.

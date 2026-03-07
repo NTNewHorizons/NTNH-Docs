@@ -51,6 +51,43 @@ Two additional workflows exist. Document them here when their purpose is confirm
 
 ---
 
+## Shared Workflow Repository
+
+Common reusable GitHub Actions workflows are centralized in:
+
+> [`NTNewHorizons/NTNH-Actions-Workflows`](https://github.com/NTNewHorizons/NTNH-Actions-Workflows)
+
+This repository is the single source of truth for workflows shared across multiple repos in the org. Individual repos call into these via `workflow_call`. If you need to modify a shared workflow, do it here - not in the individual repo.
+
+### Currently Available Workflows
+
+| File | Language | Purpose |
+|---|---|---|
+| `.github/workflows/build-and-test.yml` | Java | Builds and tests Minecraft mods. Runs on PRs to verify compilation, spotless formatting, and server startup. |
+| `.github/workflows/release-tags.yml` | Java | Builds and publishes Minecraft mod releases. Triggered on tags; handles GitHub Releases, Maven, Modrinth, and CurseForge publishing. |
+
+#### `build-and-test.yml` — What it does
+
+- Installs Ubuntu dependencies and checks out both the mod repo and the shared workflows repo.
+- Sets up JDK 8, 17, and 21 (plus any toolchain version declared in `gradle/gradle-daemon-jvm.properties`).
+- Compiles the mod and uploads the build artifacts.
+- Runs post-build checks (spotless, tests) via `xvfb-run`.
+- On failure in a PR: automatically attempts a `spotlessApply` fix and opens a new PR against the original branch.
+- Boots the mod server for up to a configurable timeout (default 90s) and checks for errors in the log.
+- Verifies no pre-release dependencies are in use.
+- Checks that no grayscale PNG assets were added (unsupported by the Java 8 image loader).
+
+#### `release-tags.yml` — What it does
+
+- Triggered on version tags.
+- Sets up the same multi-JDK environment as `build-and-test.yml`.
+- Assembles the mod and creates (or re-creates) a GitHub Release under the tag, with auto-generated or override changelog.
+- Publishes to Maven (if `MAVEN_USER` secret is set).
+- Publishes to Modrinth (if `MODRINTH_TOKEN` is set and the release is not a snapshot or pre-release).
+- Publishes to CurseForge (if `CURSEFORGE_TOKEN` is set and the release is not a snapshot or pre-release).
+
+---
+
 ## CI Secrets
 
 If you have org admin access or are debugging a workflow failure, these are the credentials the pipelines depend on:
@@ -60,6 +97,9 @@ If you have org admin access or are debugging a workflow failure, these are the 
 | `UNIVERSAL_FINE` | Org-level GitHub PAT. Lets workflows read and write across multiple repos. Three of the four workflows depend on this. **Expired token = most likely cause of mysterious CI failures. Check this first.** |
 | `CROWDIN_PROJECT_ID` | Numeric ID of the Crowdin project. Found in Crowdin project settings. |
 | `CROWDIN_PERSONAL_TOKEN` | API token for reading Crowdin contributor data. |
+| `MAVEN_USER` / `MAVEN_PASSWORD` | Credentials for publishing to the NTNH Maven repository. |
+| `MODRINTH_TOKEN` | API token for publishing releases to Modrinth. |
+| `CURSEFORGE_TOKEN` | API token for publishing releases to CurseForge. |
 
 Secrets are stored at the **organization level** in GitHub → Settings → Secrets and Variables → Actions. You need org admin access to view or rotate them.
 
@@ -82,6 +122,7 @@ Secrets are stored at the **organization level** in GitHub → Settings → Secr
 | Main repo | https://github.com/NTNewHorizons/NTNH |
 | Translations repo | https://github.com/NTNewHorizons/NTNH-Translations |
 | Documentation | https://github.com/NTNewHorizons/NTNH-Docs |
+| Shared workflows | https://github.com/NTNewHorizons/NTNH-Actions-Workflows |
 | Translation project (Crowdin) | https://crowdin.com/project/ntnh |
 | Discord | https://discord.gg/wtNVzeE5QB |
 | Website | https://ntnewhorizons.com |

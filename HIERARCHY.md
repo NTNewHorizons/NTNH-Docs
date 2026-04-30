@@ -55,7 +55,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔨 Devs - *Rerserder*
+### 🔨 Devs - *Rerserder, RuLLy (aka AxeleronPlay)*
 
 > **GitHub team:** [`@Devs`](https://github.com/orgs/NTNewHorizons/teams/devs)  
 > **Repository access:** Read access across all repositories. Changes require a PR.
@@ -66,7 +66,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔩 Devs-PT - *gamma63*
+### 🔩 Devs-PT
 
 > **GitHub team:** [`@Devs-PT`](https://github.com/orgs/NTNewHorizons/teams/devs-pt)  
 > **Repository access:** Same as `@Devs` - read access org-wide, changes via PR.

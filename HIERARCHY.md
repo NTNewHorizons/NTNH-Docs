@@ -55,7 +55,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔨 Devs - *Rerserder, RuLLy (aka AxeleronPlay)*
+### 🔨 Devs - *Rerserder*
 
 > **GitHub team:** [`@Devs`](https://github.com/orgs/NTNewHorizons/teams/devs)  
 > **Repository access:** Read access across all repositories. Changes require a PR.

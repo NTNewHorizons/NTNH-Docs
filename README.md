@@ -1,11 +1,5 @@
 # NTNH Developer Documentation
 
-Welcome to the **Nuclear Tech: New Horizons** developer documentation. Whether you just joined or you've been here for a while, this is your reference hub.
-
----
-
-## 📂 Documents
-
 | File | What's in it |
 |---|---|
 | [INFRASTRUCTURE.md](./INFRASTRUCTURE.md) | Repositories, automation pipelines, CI secrets, day-to-day dev flow |
@@ -16,7 +10,7 @@ Welcome to the **Nuclear Tech: New Horizons** developer documentation. Whether y
 
 ---
 
-## 🆕 New here?
+## New here?
 
 1. Read [HIERARCHY.md](./HIERARCHY.md) to understand who's who.
 2. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening any PRs.
@@ -25,4 +19,4 @@ Welcome to the **Nuclear Tech: New Horizons** developer documentation. Whether y
 
 ---
 
-*Last updated: March 2026*
+*Last updated: June 2026*

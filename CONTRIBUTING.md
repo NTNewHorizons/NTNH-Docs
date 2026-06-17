@@ -17,15 +17,15 @@ For refactor PRs specifically: consult the [`@Leads`](https://github.com/orgs/NT
 ## PR Requirements
 
 - Every PR must be reviewed and approved by **at least one member of [`@Leads`](https://github.com/orgs/NTNewHorizons/teams/leads) or [`@Admins`](https://github.com/orgs/NTNewHorizons/teams/admins)** before merging.
-- Your PR description must clearly explain **what you changed** and **why**, and note any side effects or areas it might affect.
+- Your PR description must clearly explain **what you changed** and **why**, and note any side effects or areas it might affect. (See PR template)
 
 ---
 
 ## How to Open a PR
 
-1. Branch off `updates/upcoming` (or the appropriate `updates/*` branch).
+1. Branch off `main` or `master` (`updates/upcoming` if you are opening a PR to NTNH repo).
 2. Make your changes.
-3. Open a PR targeting `updates/upcoming`.
+3. Open a PR targeting `main` or `master` (`updates/upcoming` in NTNH case).
 4. Fill in the PR description properly (see above).
 5. Wait for an admin to review. Don't merge your own PR.
 
@@ -55,17 +55,11 @@ The best PRs do exactly one thing. If your PR adds a new machine, it should only
 
 **This is mandatory.** Before opening a PR, you must test your changes:
 
-- ✅ On a **client**
-- ✅ On a **server**
-- ✅ If your PR includes compatibility code for a specific mod: test the game **with and without** that mod installed
+- On a **client**
+- On a **server**
+- If your PR includes compatibility code for a specific mod: test the game **with and without** that mod installed
 
 PRs with untested or obviously broken code will be rejected.
-
----
-
-## Code Standards
-
-*(This section is a placeholder - define project-specific code standards here, e.g. ZenScript formatting conventions, naming patterns for recipe overrides, etc.)*
 
 ---
 
@@ -73,7 +67,8 @@ PRs with untested or obviously broken code will be rejected.
 
 A few good entry points:
 
-- **Translations** - No Java or modding knowledge required. Head to the [Crowdin project](https://crowdin.com/project/ntnh) and start translating. It's the fastest way to make a real contribution.
-- **Upstream contributions** - Fix issues in [NTM](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) or [NTNH's NTM fork](https://github.com/NTNewHorizons/Hbm-s-Nuclear-Tech-GIT). Improvements there flow downstream into NTNH.
+- **Translation** - No Java or modding knowledge required. Head to the [Crowdin project](https://translate.ntnewhorizons.com) and start translating. It's the fastest way to make a real contribution.
+- **Upstream contributions** - Fix issues in [NTM](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) or [NTM: Space](https://github.com/JameH2/Hbm-s-Nuclear-Tech-GIT). Improvements there flow downstream into NTNH.
+- **Direct contributions** - You can fix NTNH-related bugs (that are only in the NTNH versions of the mods) and/or contribute to any NTNH repos.
 - **Website** - The [website repo](https://github.com/NTNewHorizons/NTNewHorizons.github.io) is always open to improvements.
-- **Suggestions** - Post ideas in the `#suggestions` channel on [Discord](https://discord.gg/wtNVzeE5QB). No shitposts though.
+- **Suggestions** - Post any ideas in the `#suggestions` channel on [Discord](https://discord.gg/wtNVzeE5QB). No shitposts though.

@@ -8,15 +8,15 @@ This document covers the layout of NTNH's repositories, how branches are organiz
 
 | Repository | Purpose |
 |---|---|
-| [`NTNewHorizons/NTNH`](https://github.com/NTNewHorizons/NTNH) | The modpack itself - configs, quests, recipes, translations |
+| [`NTNewHorizons/NTNH`](https://github.com/NTNewHorizons/NTNH) | The modpack itself - configs, mods, scripts |
 | [`NTNewHorizons/NTNH-Translations`](https://github.com/NTNewHorizons/NTNH-Translations) | Localization files, managed entirely by Crowdin automation |
 | [`NTNewHorizons/NTNH-Docs`](https://github.com/NTNewHorizons/NTNH-Docs) | This documentation repo |
 | [`NTNewHorizons/.github`](https://github.com/NTNewHorizons/.github) | Org profile, contributor lists (auto-updated by CI) |
 
-For Java-side work, see also the upstream repos:
+For Java-side work, see:
 - [`HbmMods/Hbm-s-Nuclear-Tech-GIT`](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) - NTM upstream
-- [`HbmMods/Hbm-s-Nuclear-Tech-GIT`](https://github.com/JameH2/Hbm-s-Nuclear-Tech-GIT) - NTM Space upstream
-- [`NTNewHorizons/Hbm-s-Nuclear-Tech-GIT`](https://github.com/NTNewHorizons/Hbm-s-Nuclear-Tech-GIT) - NTNH's NTM fork
+- [`JameH2/Hbm-s-Nuclear-Tech-GIT`](https://github.com/JameH2/Hbm-s-Nuclear-Tech-GIT) - NTM Space upstream
+- [`NTNewHorizons/Hbm-s-Nuclear-Tech-GIT`](https://github.com/NTNewHorizons/Hbm-s-Nuclear-Tech-GIT) - NTNH's (our) NTM fork
 
 ---
 
@@ -41,7 +41,7 @@ This is where the modpack lives. Everything that ends up in a player's game inst
 
 Contains translated `.lang` files for 20+ languages.
 
-**⛔ Never edit this repo by hand.** All changes go through [Crowdin](https://crowdin.com/project/ntnh). Manual edits are overwritten by automation within 24 hours.
+**Never edit this repo by hand.** All changes go through [Crowdin](https://crowdin.com/project/ntnh). Manual edits are overwritten by automation within 24 hours.
 
 See [INFRASTRUCTURE.md](./INFRASTRUCTURE.md) for how the translation pipeline works end-to-end.
 

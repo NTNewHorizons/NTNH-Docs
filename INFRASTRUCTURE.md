@@ -97,7 +97,6 @@ If you have org admin access or are debugging a workflow failure, these are the 
 | `UNIVERSAL_FINE` | Org-level GitHub PAT. Lets workflows read and write across multiple repos. Three of the four workflows depend on this. **Expired token = most likely cause of mysterious CI failures. Check this first.** |
 | `CROWDIN_PROJECT_ID` | Numeric ID of the Crowdin project. Found in Crowdin project settings. |
 | `CROWDIN_PERSONAL_TOKEN` | API token for reading Crowdin contributor data. |
-| `MAVEN_USER` / `MAVEN_PASSWORD` | Credentials for publishing to the NTNH Maven repository. |
 | `MODRINTH_TOKEN` | API token for publishing releases to Modrinth. |
 | `CURSEFORGE_TOKEN` | API token for publishing releases to CurseForge. |
 

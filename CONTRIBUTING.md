@@ -2,6 +2,8 @@
 
 This document covers everything you need to know to get a PR merged into NTNH. Read it fully before opening your first PR.
 
+**⚠️ First, read [AI_POLICY.md](./AI_POLICY.md).** We have strict rules about responsible AI usage. Violations may result in being blocked from future contributions.
+
 ---
 
 ## Before You Start

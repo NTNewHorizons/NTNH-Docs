@@ -37,7 +37,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔷 Leads - *xekitan (Java Lead), Hi-Verse (Project Lead)*
+### 🔷 Leads - *Kolja (Java Lead), THOMASS47 (Project Lead)*
 
 > **GitHub team:** [`@Leads`](https://github.com/orgs/NTNewHorizons/teams/leads)  
 > **Repository access:** Full rights across all repositories.  
@@ -55,7 +55,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔨 Devs - *Rerserder*
+### 🔨 Devs - *HiVerse, Rerserder, Xekitan*
 
 > **GitHub team:** [`@Devs`](https://github.com/orgs/NTNewHorizons/teams/devs)  
 > **Repository access:** Read access across all repositories. Changes require a PR.
@@ -66,7 +66,7 @@ The org has four teams on GitHub: [`@Admins`](https://github.com/orgs/NTNewHoriz
 
 ---
 
-### 🔩 Devs-PT
+### 🔩 Devs-PT - *Pomagierko, Zockernext, Gamernaut12*
 
 > **GitHub team:** [`@Devs-PT`](https://github.com/orgs/NTNewHorizons/teams/devs-pt)  
 > **Repository access:** Same as `@Devs` - read access org-wide, changes via PR.
